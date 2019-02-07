@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Isotope Admin: identify Fake Product</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="icon" href="images/search.png" type="image/gif" sizes="16x16">
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/lib/bootstrap.min.css" />
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="#" class="logo">Isotope Admin</a>
+					<nav id="nav">
+						<a href="support.html">Support</a>
+						<a id="menu-order-id" href="orders.html">Orders</a>
+						<a id="menu-report-id" href="report.html">Reports</a>
+						<!-- <a id="menu-download-id" href="downloads.html">Downloads</a> -->
+						<!-- <a id="menu-search-id" href="search.html">Search</a> -->
+						<a id="menu-logout-id" href="login.html">Logout</a>
+					</nav>
+				</div>
+			</header>
+			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+
+		<!-- Main -->
+			<section id="main" >
+				<div class="inner">
+					<!-- Form -->
+					<section>
+						<h3>Create Order</h3>
+							<div class="row uniform 25%" >
+									<div  class="row uniform 25%" id="create-order-container">
+										<div class="12u 12u$(xsmall)">
+											<input type="text" id="product-code" value="" placeholder="Product (Example:12)" />
+										</div>
+										<div class="12u 12u$(xsmall)">
+											<input type="text"  id="product-type" value="" placeholder="Product Type (Example:34)" />
+										</div>
+										<div class="12u 12u$(xsmall)">
+											<input type="text" id="product-count" value="" placeholder="Product Count (Example:1234)" />
+										</div>
+										<div class="12u 12u$(xsmall)">
+											<input type="text" id="add-client-id" value="" placeholder="Client ID" style="display: none;"/>
+										</div>
+										<div class="12u 12u$(xsmall)">
+											<input type="text" id="add-manf-date" value="" placeholder="Manufacturing Date" style="display: none;" />
+										</div>
+										<div class="12u 12u$(xsmall)">
+											<input type="text" id="add-expiry-date" value="" placeholder="Expiry Date" style="display: none;" />
+										</div>
+										<div class="12u 12u$(xsmall)">
+											<input type="text" id="add-variation" value="" placeholder="Skew ID/Variation"  style="display: none;"/>
+										</div>
+										<div class="12u 12u$(xsmall)">
+											<input type="text" id="add-generic" value="" placeholder="Generic" style="display: none;" />
+										</div>
+								</div>
+								<div class="12u$">
+
+									<div class="dropdown add-fields-container">
+										<input type="submit" id="dropdownMenu2" data-toggle="dropdown"  value="Add fields" aria-haspopup="true" aria-expanded="false" class="special" />
+										<div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+											<button class="dropdown-item" type="button" data-text="Client ID" data-id ="add-client-id">Client ID</button>
+											<button class="dropdown-item" type="button" data-text="Manufacturing Date" data-id ="add-manf-date">Manufacturing Date</button>
+											<button class="dropdown-item" type="button" data-text="Expiry Date" data-id="add-expiry-date">Expiry Date</button>
+											<button class="dropdown-item" type="button" data-text="Skew ID/Variation" data-id="add-variation">Skew ID/Variation</button>
+											<button class="dropdown-item-generic" type="button" data-text="Generic" data-id="add-generic">Generic</button>
+										</div>
+									</div>
+
+									<ul class="actions">
+											<li><input id="create-order-id" type="submit" value="Create" class="special" /></li>
+									</ul>
+
+								</div>
+							</div>
+						</section>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<section id="footer">
+				<div class="inner">
+					<div class="copyright">
+						Copyright &copy; isotope @2018  All rights reserved.
+					</div>
+				</div>
+			</section>
+
+			<!-- Modal -->
+			<div id="myModal" class="modal" tabindex="-1" role="dialog">
+				<div class="modal-dialog modal-dialog-centered" role="document">
+				  <div class="modal-content">
+					<div class="modal-header">
+					  <h5 class="modal-title">Isotope</h5>
+					  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					  </button>
+					</div>
+					<div class="modal-body">
+					  <p>Modal body text goes here.</p>
+					</div>
+					<div class="modal-footer">
+					  <button type="button" class="btn btn-primary" data-dismiss="modal" id="createSuccess-close" >Close</button>
+					</div>
+				  </div>
+				</div>
+			  </div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/lib/bootstrap.bundle.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/createorder.js"></script>
+			
+	</body>
+</html>
